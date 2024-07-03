@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form Bank</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <img src="https://i.pinimg.com/564x/37/9a/5e/379a5e4fd4d416640ef6afaa4afdca14.jpg" alt="Bank Logo" class="logo">
+        <h2>UTI Mutual Fund - Registration of Bank Account Details</h2>
+    </div>
+
+    <form>
+        <div class="section" id="unitholder-info">
+            <h3>Unitholder’s Information</h3>
+            
+            <label for="folioNumber">Folio Number:</label><br>
+            <input type="text" id="folioNumber" name="folioNumber" placeholder="Enter Folio Number"><br><br>
+
+            <label for="holderName">Name of the sole / first holder:</label><br>
+            <input type="text" id="holderName" name="holderName" placeholder="Enter Name"><br><br>
+
+            <label for="schemePlanOption">Scheme / Plan / Option UTI -</label><br>
+            <input type="text" id="schemePlanOption" name="schemePlanOption" placeholder="Enter Scheme / Plan / Option"><br><br>
+        </div>
+
+        <div class="section" id="bank-details">
+            <h3>Bank Details</h3>
+            
+            <label for="bankName">Name of the Bank:</label><br>
+            <input type="text" id="bankName" name="bankName" placeholder="Enter Bank Name"><br><br>
+
+            <label for="branch">Branch:</label><br>
+            <input type="text" id="branch" name="branch" placeholder="Enter Branch"><br><br>
+
+            <label for="accountNumber">Account number:</label><br>
+            <input type="text" id="accountNumber" name="accountNumber" placeholder="Enter Account Number"><br><br>
+
+            <label for="accountType">Account type:</label><br>
+            <input type="radio" id="savings" name="accountType" value="Savings">
+            <label for="savings">Savings</label><br>
+            <input type="radio" id="current" name="accountType" value="Current">
+            <label for="current">Current</label><br>
+            <input type="radio" id="nre" name="accountType" value="NRE">
+            <label for="nre">NRE</label><br>
+            <input type="radio" id="nro" name="accountType" value="NRO">
+            <label for="nro">NRO</label><br><br>
+
+            <label for="micr">MICR (9 Digit):</label><br>
+            <input type="text" id="micr" name="micr" placeholder="Enter MICR"><br><br>
+
+            <label for="ifsc">IFS Code (11 Character):</label><br>
+            <input type="text" id="ifsc" name="ifsc" placeholder="Enter IFSC Code"><br><br>
+
+            <label for="branchAddress">Branch address:</label><br>
+            <input type="text" id="branchAddress" name="branchAddress" placeholder="Enter Branch Address"><br><br>
+
+            <label for="branchCity">Branch City:</label><br>
+            <input type="text" id="branchCity" name="branchCity" placeholder="Enter Branch City"><br><br>
+
+            <label for="branchPincode">Branch Pin code:</label><br>
+            <input type="text" id="branchPincode" name="branchPincode" placeholder="Enter Branch Pin code"><br><br>
+        </div>
+
+        <div class="section" id="supporting-docs">
+            <h3>Supporting Documents for Registration of Bank Account</h3>
+            
+            <label>Choose one of the following:</label><br>
+            <input type="checkbox" id="cancelledCheque" name="supportingDocs" value="Cancelled original cheque leaf">
+            <label for="cancelledCheque">Cancelled original cheque leaf</label><br>
+            <input type="checkbox" id="bankPassbook" name="supportingDocs" value="Copy of bank passbook or bank statement">
+            <label for="bankPassbook">Copy of bank passbook or bank statement</label><br>
+            <input type="checkbox" id="bankLetter" name="supportingDocs" value="Letter from the bank stating the account number and name of the holders">
+            <label for="bankLetter">Letter from the bank stating the account number and name of the holders</label><br><br>
+        </div>
+
+        <div class="section" id="proof-identity">
+            <h3>Proof of Identity</h3>
+            
+            <label>Choose one of the following:</label><br>
+            <input type="checkbox" id="panCopy" name="identityProof" value="PAN copy"><label for="panCopy">PAN copy</label><br>
+            <input type="checkbox" id="passportCopy" name="identityProof" value="Passport copy"><label for="passportCopy">Passport copy</label><br>
+            <input type="checkbox" id="aadharCard" name="identityProof" value="Aadhar Card"> <label for="aadharCard">Aadhar Card</label><br>
+            <input type="checkbox" id="rationCard" name="identityProof" value="Photo Ration Card"><label for="rationCard">Photo Ration Card</label><br>
+            <input type="checkbox" id="voterId" name="identityProof" value="Voter Identity card"><label for="voterId">Voter Identity card</label><br>
+            <input type="checkbox" id="drivingLicense" name="identityProof" value="Driving License"> <label for="drivingLicense">Driving License</label><br>
+            <input type="checkbox" id="debitCard" name="identityProof" value="Photo Debit Card"><label for="debitCard">Photo Debit Card</label><br>
+            <input type="checkbox" id="govtId" name="identityProof" value="Govt. or Defence identification card"> <label for="govtId">Govt. or Defence identification card</label><br><br>
+        </div>
+
+        <div class="section" id="investment-proof">
+            <h3>Investment Proof</h3>
+            
+            <label>Choose one of the following:</label><br>
+            <input type="checkbox" id="soa" name="investmentProof" value="Original SoA/Membership advice/Unit certificate issued prior to 2007">
+            <label for="soa">Original SoA/Membership advice/Unit certificate issued prior to 2007</label><br>
+            <input type="checkbox" id="applicationAck" name="investmentProof" value="Copy of acknowledgement of the application through which investment was made">
+            <label for="applicationAck">Copy of acknowledgement of the application through which investment was made</label><br>
+            <input type="checkbox" id="passbookEntry" name="investmentProof" value="Copy of passbook showing debit entry of the investment in the Scheme">
+            <label for="passbookEntry">Copy of passbook showing debit entry of the investment in the Scheme</label><br><br>
+        </div>
+
+        <div class="section" id="uti-ulip">
+            <h3>UTI ULIP</h3>
+            
+            <label>Choose one of the following (Applicable only for redemption on maturity):</label><br>
+            <input type="checkbox" id="membershipAdvice" name="utipUlip" value="Original membership Advice">
+            <label for="membershipAdvice">Original membership Advice</label><br>
+            <input type="checkbox" id="renewalReceipts" name="utipUlip" value="Original receipts of Renewal Contributions paid">
+            <label for="renewalReceipts">Original receipts of Renewal Contributions paid</label><br>
+            <input type="checkbox" id="soa2007" name="utipUlip" value="Original SoA issued prior to 2007">
+            <label for="soa2007">Original SoA issued prior to 2007</label><br><br>
+        </div>
+
+        <div class="section" id="additional-details">
+            <h3>Additional Details</h3>
+            
+            <label for="mobileNumber">Mobile No:</label><br>
+            <input type="text" id="mobileNumber" name="mobileNumber" placeholder="Enter Mobile Number"><br><br>
+
+            <label for="panNumber">PAN:</label><br>
+            <input type="text" id="panNumber" name="panNumber" placeholder="Enter PAN"><br><br>
+
+            <label for="email">Email ID:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter Email ID"><br><br>
+        </div>
+
+        <div class="section" id="declaration">
+            <h3>Declaration and Signature of Unitholder(s)</h3>
+            
+            <p>I/we have read and understood the guidelines and agree to abide by the same.</p>
+            
+            <label for="firstHolderSignature">Sole/First Unit holder:</label><br>
+            <input type="text" id="firstHolderSignature" name="firstHolderSignature" placeholder="Signature"><br><br>
+            
+            <label for="secondHolderSignature">Second Unit holder:</label><br>
+            <input type="text" id="secondHolderSignature" name="secondHolderSignature" placeholder="Signature"><br><br>
+            
+            <label for="thirdHolderSignature">Third Unit holder:</label><br>
+            <input type="text" id="thirdHolderSignature" name="thirdHolderSignature" placeholder="Signature"><br><br>
+        </div>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
