@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<button onclick="hv()">hk</button>    
+<h1 class ="invisible"></h1>
+</body>
+</html>
+<script>
+    let arr = [];
+    function push(){
+        arr.push(inp.value)
+        console.log(arr);
+        display();
+    }
+    function display(){
+        div.innerHTML=""
+        for(let i = 0; i<arr.length; i++){
+            let head = document.createElement("h1")
+            head.innerText = arr[i];
+            div.append(head)
+
+        }
+        console.log("display");
+    }
+    let body= document.querySelector("body");
+    let inp = document.createElement("input");
+    inp.setAttribute("id","inp")
+    let div = document.createElement("div")
+    let btn = document.createElement("button");
+    btn.innerHTML="click"
+    btn.addEventListener("click",push)
+    body.append(inp,btn,div)
+
+</script>
