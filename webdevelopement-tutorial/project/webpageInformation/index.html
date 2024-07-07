@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="path/to/your/logo-image.png" alt="Logo">
+            <span>Your Site Name</span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="signup.html">Signup</a>
+        </div>
+    </div>
+
+    <div id="inputSection" class="input-section" style="display: none;">
+        <input type="text" id="inputData" placeholder="Enter data">
+        <input type="text" id="inputImage" placeholder="Enter image URL">
+        <button onclick="addData()">Submit</button>
+    </div>
+
+    <div id="contentSection" class="content-section">
+        <!-- User data will be displayed here -->
+    </div>
+</body>
+</html>
