@@ -3,7 +3,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background: url(https://img.freepik.com/premium-photo/web-page-background_777576-8088.jpg?w=1800) no-repeat center center fixed; /* Background image */
+    background: url('https://geographical.co.uk/wp-content/uploads/Pembrokeshire-National-Park-in-Wales.jpg') no-repeat center center fixed; /* Background image */
     background-size: cover;
     color: #333;
 }
@@ -21,11 +21,13 @@ body {
 .navbar .logo {
     display: flex;
     align-items: center;
+
 }
 
 .navbar .logo img {
     height: 40px; /* Adjust the height of the logo image */
     margin-right: 10px;
+    border-radius: 5px;
 }
 
 .navbar .logo span {
@@ -42,14 +44,15 @@ body {
 
 /* Input section styles */
 .input-section {
-    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
     padding: 20px;
     margin: 20px auto;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
     max-width: 600px;
-    display: none;  /* Hide by default */
+    display: flex;
     flex-direction: column;
     gap: 10px;
+    border-radius: 10px;
 }
 
 .input-section input {
@@ -76,34 +79,41 @@ body {
 
 /* Content section styles */
 .content-section {
-    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
     padding: 20px;
     margin: 20px auto;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     max-width: 900px;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    border-radius: 10px;
 }
 
 .data-image-container {
     display: flex;
     gap: 10px;
+    opacity: 0;
+    animation: fadeIn 2s forwards; /* Animation */
 }
 
 .content-box {
-    background-color: #f9e3c8;
+    background-color: #fff;
     padding: 20px;
     margin: 10px 0;
     text-align: center;
     border-radius: 5px;
     flex: 1;
+    transform: translateY(20px);
+    animation: slideIn 1s forwards; /* Animation */
 }
 
 .content-box img {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
+    transform: scale(0.8);
+    animation: zoomIn 1s forwards; /* Animation */
 }
 
 /* Form section styles */
@@ -145,4 +155,23 @@ body {
 
 .form-section button:hover {
     background-color: #45a049;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    to {
+        transform: scale(1);
+    }
 }
