@@ -1,0 +1,85 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [];
+        let inp1 = document.createElement("input");
+        let inp2 = document.createElement("input");
+        let btn = document.createElement("button");
+        btn.innerHTML = "submit";
+        btn.addEventListener("click", submit);
+        let body = document.querySelector("body");
+        let div = document.createElement("div");
+        div.style.border = "1px solid red";
+        body.append(inp1, inp2, btn, div);
+
+        function submit() {
+            let obj = {
+                data: inp1.value,
+                image: inp2.value  // Ensure property name matches
+            }
+            arr.push(obj);
+            display();  // Call the display function to update the content
+        }
+
+        function display() {
+            // Clear the div content before adding new elements
+            div.innerHTML = '';
+            for (let i = 0; i < arr.length; i++) {
+                let para = document.createElement("p");
+                let img = document.createElement("img");
+                para.innerText = arr[i].data;
+                img.src = arr[i].image;
+                if (i % 2 == 0) {
+                    div.append(para, img);
+                } else {
+                    div.append(img, para);
+                }
+            }
+        }
+    </script>
+</body>
+</html> -->
+
+//local storage
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <!-- <input type="text"> -->
+    <button onclick="saveToLocal()">click</button>
+    <button onclick="getFromLocal()">get</button>
+</body>
+</html>
+<script>
+    let arr = [1,2,3,4,5]
+    function saveToLocal(){
+        localStorage.setItem("phone",JSON.stringify(1234))
+        localStorage.setItem("name","aman")
+        localStorage.setItem("phone",343545656576)
+        localStorage.setItem("add",343556565)
+        localStorage.setItem("array",arr)
+
+    }
+
+    function getFromLocal(){
+        let ph = localStorage.getItem("phone")
+        let arr =localStorage.getItem("array")
+        localStorage.getItem("phone")
+       // console.log(ph,"get function");
+        
+        console.log(typeof(ph),ph);
+        console.log(typeof(arr),arr);
+        console.log(typeof(56),56);
+    }
+</script>

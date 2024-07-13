@@ -1,0 +1,163 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://plus.unsplash.com/premium_photo-1671156854811-92d6bff8209b?q=80&w=2900&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Add your background image here */
+    background-size: cover;
+    color: #333;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: rgba(76, 175, 80, 0); /* Semi-transparent background */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.navbar .logo img {
+    height: 40px;
+    border-radius: 5px; /* Adjust as needed */
+    
+}
+.navbar .logo span {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.navbar .nav-links a,
+.navbar .nav-links button {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1em;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar .nav-links button:hover {
+    text-decoration: underline;
+}
+
+/* Input section styles */
+.input-section {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.input-section input {
+    flex: 1;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input-section button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.input-section button:hover {
+    background-color: #45a049;
+}
+
+/* Content section styles */
+.content-section {
+    background-color: rgba(245, 234, 234, 0.264); /* Semi-transparent background */
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+.data-image-container {
+    display: flex;
+    gap: 10px;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+.content-box {
+    background-color: #f9f8f7;
+    padding: 20px;
+    margin: 10px 0;
+    text-align: center;
+    border-radius: 5px;
+    flex: 1;
+}
+
+.content-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Form section styles */
+.form-section {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.form-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-section input {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-section button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.form-section button:hover {
+    background-color: #45a049;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}

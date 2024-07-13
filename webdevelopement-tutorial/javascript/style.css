@@ -1,0 +1,50 @@
+#heading{
+    color: blue;
+    background-color: yellow}
+/* by id */
+
+.heading{
+    color: blue;
+    background-color: yellow;}
+/* by class */
+    
+body{
+    background-color: pink;
+    
+}
+button{
+    background-color: blue;
+    color: white;
+    
+}
+.box{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    margin: 5px;
+    text-align: center;
+    background-color: aqua;
+}
+.content{
+    color: rebeccapurple;
+}
+.newClass{
+    background-color: aqua;
+}
+div{
+    height: 100px;
+    width: 100px;
+    background-color: darkgreen;
+    color: color(srgb red green blue);
+    border: 1px solid black;
+}
+
+.dark{
+    background-color: black;
+    color: white;
+}
+
+.light{
+    background-color: white;
+    color: black;
+}

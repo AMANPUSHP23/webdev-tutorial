@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo"><img src="logo.png" alt="Nav Logo"></div> <!-- Add your logo image here -->
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="signup.html">Signup</a>
+        </div>
+    </div>
+
+    <div class="form-section">
+        <h2>Signup</h2>
+        <form onsubmit="return signupUser()">
+            <input type="text" id="signupUsername" placeholder="Username">
+            <input type="email" id="signupEmail" placeholder="Email">
+            <input type="password" id="signupPassword" placeholder="Password">
+            <button type="submit">Signup</button>
+        </form>
+    </div>
+</body>
+</html>
